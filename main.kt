@@ -1,6 +1,3 @@
 fun main() {
-    val tester = Programmers_92335()
-
-    println(tester.solution(5))
-
+//    val tester = Programmers64062().solution()
 }
