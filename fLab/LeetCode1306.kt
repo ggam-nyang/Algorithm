@@ -1,33 +1,29 @@
 package fLab
 
 class LeetCode1306 {
-    fun canReach(arr: IntArray, start: Int): Boolean {
-        val visited = BooleanArray(arr.size)
-
-        val queue = ArrayDeque<Int>()
-        queue.addLast(start)
-        visited[start] = true
-
-        while (queue.isNotEmpty()) {
-            val nowIdx = queue.removeFirst()
-            val nowVal = arr[nowIdx]
-
-            if (nowVal == 0) return true
-
-            val left = nowIdx - arr[nowIdx]
-            val right = nowIdx + arr[nowIdx]
-
-            if (left >= 0 && !visited[left]) {
-                queue.addLast(left)
-                visited[left] = true
-            }
-
-            if (right < arr.size && !visited[right]) {
-                queue.addLast(right)
-                visited[right] = true
-            }
+    fun maxFreq(s: String, maxLetters: Int, minSize: Int, maxSize: Int): Int {
+        val subStrMap = hashMapOf<String, Int>()
+        for (len in minSize .. maxSize) {
+            getSubstrings(s, len, maxLetters)
+                .forEach { subStr ->
+                    subStrMap[subStr] = subStrMap.getOrPut(subStr) { 0 } + 1
+                }
         }
 
-        return false
+        return subStrMap.maxBy { it.value }?.value ?: 0
+    }
+
+    fun getSubstrings(s: String, size: Int, maxLetters: Int): ArrayList<String> {
+        val subStrList = arrayListOf<String>()
+        for (i in 0 .. s.length - size) {
+            val subString = s.substring(i, i + size)
+            if (hasValidLetters(subString, maxLetters)) subStrList.add(subString)
+        }
+
+        return subStrList
+    }
+
+    fun hasValidLetters(subString: String, maxLetters: Int) : Boolean {
+        return subString.toSet().size <= maxLetters
     }
 }
