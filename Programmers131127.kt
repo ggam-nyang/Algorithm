@@ -16,6 +16,8 @@ class Programmers131127 {
             return 0
         }
 
+        if (isPossible(wantMap)) answer++
+
         for (i in 10 until discount.size) {
             if (wantMap.containsKey(discount[i]))
                 wantMap[discount[i]] = wantMap[discount[i]]!! - 1
