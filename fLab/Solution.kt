@@ -1,25 +1,15 @@
 package fLab
 
-import java.lang.Exception
-import kotlin.math.max
-
 class Solution {
     fun findDiagonalOrder(nums: List<List<Int>>): IntArray {
-        val answer = arrayListOf<Int>()
+        val newNums = nums.mapIndexed { i, v ->
+            v.mapIndexed { j, vv ->  Triple(i + j, j, vv) }
+        }.flatten()
 
-        val R = nums.size
-        val C = nums.map { it.size }.max() ?: 1
-
-        for (i in 0 until max(R, C)) {
-            for (j in 0 .. i) {
-                try {
-                    answer.add(nums[i - j][j])
-                } catch (_: Exception) {
-
-                }
-            }
-        }
-
-        return answer.toIntArray()
+        return newNums.sortedWith(compareBy<Triple<Int, Int, Int>> { it.first }
+            .thenBy { it.second }
+        )
+            .map { it.third }
+            .toIntArray()
     }
 }
