@@ -1,15 +1,21 @@
 package fLab
 
 class Solution {
-    fun findDiagonalOrder(nums: List<List<Int>>): IntArray {
-        val newNums = nums.mapIndexed { i, v ->
-            v.mapIndexed { j, vv ->  Triple(i + j, j, vv) }
-        }.flatten()
+    fun findLeastNumOfUniqueInts(arr: IntArray, k: Int): Int {
+        val hm = arr.groupBy { it }
+            .mapValues { it.value.size }
 
-        return newNums.sortedWith(compareBy<Triple<Int, Int, Int>> { it.first }
-            .thenBy { it.second }
-        )
-            .map { it.third }
-            .toIntArray()
+        var copyK = k
+        var leftNum = hm.size
+        hm.values
+            .sorted()
+            .forEach { cnt ->
+                if ( cnt <= copyK) {
+                    copyK -= cnt
+                    leftNum --
+                } else return leftNum
+            }
+
+        return leftNum
     }
 }
