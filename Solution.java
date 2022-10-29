@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-class Solution {
+class SomeProb {
     public boolean solution(String[] phone_book) {
         HashSet<String> hs = new HashSet<>();
         for (String s : phone_book) {
