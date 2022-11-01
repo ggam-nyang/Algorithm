@@ -1,4 +1,4 @@
-class Solution {
+class Programmers118667 {
     fun solution(queue1: IntArray, queue2: IntArray): Int {
         val q1 = ArrayDeque(queue1.toList())
         val q2 = ArrayDeque(queue2.toList())
