@@ -8,7 +8,7 @@ class Solution {
             return -1
         }
 
-        val bloomHeap = PriorityQueue<Int>(bloomDay.toList())
+        val bloomHeap = PriorityQueue<Int>(bloomDay.toSet())
 
         var day = 0
         while (bloomHeap.isNotEmpty()) {
@@ -22,14 +22,22 @@ class Solution {
 
     private fun checkFlowers(day: Int, bloomDay: IntArray, m: Int, k: Int) : Boolean {
         var cnt = 0
-        for (i in 0 until  bloomDay.size - k) {
-            if (bloomDay[i] > day) continue
-            for (j in 0 until k) {
-                if (bloomDay[i + k] > day) break
+        var i = 0
+        loop@ while (i < bloomDay.size) {
+            if (bloomDay[i] > day) {
+                i++
+                continue
             }
-            println("$day  $cnt  $i")
+            for (j in 0 until k) {
+                if (bloomDay[i + j] > day) {
+                    i += j + 1
+                    break@loop
+                }
+            }
             cnt++
             if (cnt >= m) return true
+
+            i += k
         }
 
         return cnt >= m
