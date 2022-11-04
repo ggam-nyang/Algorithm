@@ -1,6 +1,6 @@
 package fLab
 
-import java.util.PriorityQueue
+import kotlin.math.pow
 
 class Solution {
     fun minDays(bloomDay: IntArray, m: Int, k: Int): Int {
@@ -8,36 +8,31 @@ class Solution {
             return -1
         }
 
-        val bloomHeap = PriorityQueue<Int>(bloomDay.toSet())
+        var left = 1
+        var right = bloomDay.max()!!
 
-        var day = 0
-        while (bloomHeap.isNotEmpty()) {
-            day = bloomHeap.poll()
+        var mid = -1
+        while (left <= right) {
+            mid = (left + right) / 2
 
-            if (checkFlowers(day, bloomDay, m, k)) return day
+            if (checkFlowers(mid, bloomDay, m, k)) right = mid - 1
+            else left = mid + 1
         }
 
-        return -1
+        return if (checkFlowers(left, bloomDay, m, k)) left else -1
     }
 
-    private fun checkFlowers(day: Int, bloomDay: IntArray, m: Int, k: Int) : Boolean {
+    private fun checkFlowers(day: Int, bloomDays: IntArray, m: Int, k: Int) : Boolean {
         var cnt = 0
-        var i = 0
-        loop@ while (i < bloomDay.size) {
-            if (bloomDay[i] > day) {
-                i++
-                continue
-            }
-            for (j in 0 until k) {
-                if (bloomDay[i + j] > day) {
-                    i += j + 1
-                    break@loop
-                }
-            }
-            cnt++
-            if (cnt >= m) return true
+        var continueDay = 0
+        bloomDays.forEach { bloomDay ->
+            if (bloomDay <= day) continueDay++
+            else continueDay = 0
 
-            i += k
+            if (continueDay == k) {
+                cnt++
+                continueDay = 0
+            }
         }
 
         return cnt >= m
