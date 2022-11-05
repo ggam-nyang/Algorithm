@@ -1,6 +1,6 @@
 package fLab
 
-class Solution {
+class LeetCode938 {
     var sumOfTree = 0
 
     fun rangeSumBST(root: TreeNode?, low: Int, high: Int): Int {
@@ -21,4 +21,9 @@ class Solution {
             traverse(low, high, aNode.left)
         }
     }
+}
+
+class TreeNode(var `val`: Int) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
 }
