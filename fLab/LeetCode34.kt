@@ -1,4 +1,6 @@
-class Solution {
+package fLab
+
+class LeetCode34 {
     fun searchRange(nums: IntArray, target: Int): IntArray {
         return intArrayOf(
             binarySearch(nums, target, true),
