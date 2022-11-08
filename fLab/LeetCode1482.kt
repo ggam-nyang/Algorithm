@@ -1,8 +1,6 @@
 package fLab
 
-import kotlin.math.pow
-
-class Solution {
+class LeetCode1482 {
     fun minDays(bloomDay: IntArray, m: Int, k: Int): Int {
         if (bloomDay.size < m * k) {
             return -1
