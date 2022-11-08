@@ -1,4 +1,6 @@
-class Solution {
+package fLab
+
+class LeetCode33 {
     fun search(nums: IntArray, target: Int): Int {
         var left = 0
         var right = nums.size - 1
