@@ -1,4 +1,4 @@
-package fLab
+package LeetCode
 
 class LeetCode33 {
     fun search(nums: IntArray, target: Int): Int {

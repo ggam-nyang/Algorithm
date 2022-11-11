@@ -1,4 +1,4 @@
-package fLab
+package LeetCode
 
 class LeetCode74 {
     fun searchMatrix(matrix: Array<IntArray>, target: Int): Boolean {
