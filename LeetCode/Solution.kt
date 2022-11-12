@@ -1,20 +1,25 @@
 package LeetCode
 
 class Solution {
-    fun findPeakElement(nums: IntArray): Int {
-        if (nums.size == 1) return 0
-        if (isPeak(nums.first(), null, nums[1])) return 0
+    fun threeSum(nums: IntArray): List<List<Int>> {
+        val answer = mutableListOf<List<Int>>()
+        combination(answer, nums.toList(), Array(nums.size) {false}, 0, 3)
 
-        for (i in 1 until nums.size - 1) {
-            if (isPeak(nums[i], nums[i - 1], nums[i + 1])) return i
-        }
-
-        if (isPeak(nums.last(), nums[nums.size - 2], null)) return nums.size - 1
-
-        return -1
+        return answer.filter {
+            it[0] + it[1] + it[2] == 0
+        }.map { it.sorted() }
+            .distinct()
     }
 
-    private fun isPeak(target: Int, prev: Int?, next: Int?): Boolean {
-        return (prev ?: Int.MIN_VALUE) < target && target > (next ?: Int.MIN_VALUE)
+    fun <T> combination(answer: MutableList<List<T>>, el: List<T>, ck: Array<Boolean>, start: Int, target: Int) {
+        if(target == 0) {
+            answer.addAll( listOf(el.filterIndexed { index, t -> ck[index] }) )
+        } else {
+            for(i in start until el.size) {
+                ck[i] = true
+                combination(answer, el, ck, i + 1, target - 1)
+                ck[i] = false
+            }
+        }
     }
 }
