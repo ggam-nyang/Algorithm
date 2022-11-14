@@ -1,6 +1,6 @@
 package LeetCode
 
-class Solution {
+class LeetCode844 {
     fun backspaceCompare(s: String, t: String): Boolean {
         val newS = deleteHash(0, s, "")
         val newT = deleteHash(0, t, "")
