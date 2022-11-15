@@ -1,4 +1,4 @@
-package LeetCode
+package leetCode
 
 class LeetCode844 {
     fun backspaceCompare(s: String, t: String): Boolean {

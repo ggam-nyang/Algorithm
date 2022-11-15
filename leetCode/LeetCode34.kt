@@ -1,4 +1,4 @@
-package LeetCode
+package leetCode
 
 class LeetCode34 {
     fun searchRange(nums: IntArray, target: Int): IntArray {

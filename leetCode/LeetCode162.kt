@@ -1,4 +1,4 @@
-package LeetCode
+package leetCode
 
 class LeetCode162 {
     fun findPeakElement(nums: IntArray): Int {

@@ -1,6 +1,6 @@
-package LeetCode
+package leetCode
 
-class Solution {
+class LeetCode15 {
     fun threeSum(nums: IntArray): List<List<Int>> {
         val answer = mutableListOf<List<Int>>()
         combination(answer, nums.toList(), Array(nums.size) {false}, 0, 3)
