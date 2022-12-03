@@ -1,3 +1,5 @@
+package Programmers
+
 fun solution87389(n: Int): Int {
     var answer: Int = 2
     while (true) {

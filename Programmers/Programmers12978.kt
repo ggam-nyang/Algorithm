@@ -1,4 +1,4 @@
-
+package Programmers
 class Programmers12978 {
     fun solution(N: Int, road: Array<IntArray>, k: Int): Int {
         val graph = Array(N + 1) { IntArray(N + 1) { 0 } }

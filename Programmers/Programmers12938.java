@@ -1,4 +1,6 @@
-    class Programmers12938 {
+package Programmers;
+
+class Programmers12938 {
         public int[] solution(int n, int s) {
             int avg = s / n;
             int namugi = s % n;

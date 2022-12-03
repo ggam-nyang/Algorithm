@@ -1,3 +1,5 @@
+package Programmers
+
 class Programmers131127 {
     fun solution(want: Array<String>, number: IntArray, discount: Array<String>): Int {
         var answer = 0

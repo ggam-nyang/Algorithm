@@ -1,3 +1,5 @@
+package Programmers
+
 class Solution {
     fun solution(k: Int, ranges: Array<IntArray>): DoubleArray {
         val points = getPoints(k)

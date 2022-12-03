@@ -1,3 +1,5 @@
+package Programmers
+
 class Programmers64062_retry {
     fun solution(stones: IntArray, k: Int): Int {
         var left = 0

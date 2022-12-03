@@ -1,4 +1,4 @@
-// 효율성 Retry!!
+package Programmers// 효율성 Retry!!
 
 class Programmers92344 {
     fun solution(board: Array<IntArray>, skill: Array<IntArray>): Int {

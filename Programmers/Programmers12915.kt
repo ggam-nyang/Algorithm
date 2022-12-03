@@ -1,3 +1,5 @@
+package Programmers
+
 class Programmers12915 {
     fun solution(strings: Array<String>, n: Int): Array<String> {
         return strings

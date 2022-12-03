@@ -1,3 +1,5 @@
+package Programmers
+
 class Programmers64062 {
     fun solution(stones: IntArray, k: Int): Int {
         var answer = 0

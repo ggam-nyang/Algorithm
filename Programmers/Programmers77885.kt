@@ -1,3 +1,5 @@
+package Programmers
+
 class Programmers77885 {
     fun solution(numbers: LongArray): List<Int> {
         return numbers

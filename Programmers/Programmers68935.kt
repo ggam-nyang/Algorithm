@@ -1,3 +1,5 @@
+package Programmers
+
 class Programmers68935 {
     fun solution(n: Int): Int {
         return n
