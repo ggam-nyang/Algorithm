@@ -1,6 +1,6 @@
 package programmers
 
-class Solution {
+class Programmers42579 {
     fun solution(genres: Array<String>, plays: IntArray): IntArray {
 
         val songForGenres = genres.indices.groupBy({ genres[it] }, { it })
