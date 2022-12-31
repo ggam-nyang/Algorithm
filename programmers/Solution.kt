@@ -44,20 +44,23 @@ class Solution {
     private fun getDivisors2(someNum: Int): Int {
         val squareRoot = sqrt(someNum.toDouble()).toInt()
 
-        var i = 2
         var num = someNum
+        val divisorMap = hashMapOf<Int, Int>()
 
-        while (num > 1) {
-            if (num % i == 0)
-        }
-        for (i in 1..squareRoot) {
-            if (someNum % i == 0) {
-                divisors++
+        for (i in 2..squareRoot) {
+            while (num % i == 0) {
+                num /= i
+                divisorMap[i] = divisorMap.getOrDefault(i, 0) + 1
             }
         }
-        divisors = if (squareRoot * squareRoot == someNum) divisors * 2 - 1 else divisors * 2
-        divisorsMap[someNum] = divisors
 
-        return divisors
+        if (num != 1) divisorMap[num] = divisorMap.getOrDefault(num, 0) + 1
+
+        var answer = 1
+        divisorMap.forEach { (_, value) ->
+            answer *= (value + 1)
+        }
+
+        return answer
     }
 }
