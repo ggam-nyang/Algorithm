@@ -2,8 +2,7 @@ package programmers
 
 import kotlin.math.sqrt
 
-// 138475
-class Solution {
+class Programmers138475 {
     private val divisorsMap = hashMapOf<Int, Int>()
     private val startToDivisorsMap = hashMapOf<Int, Pair<Int, Int>>()
 
