@@ -1,6 +1,6 @@
 package programmers
 
-class Solution {
+class Programmers134239 {
     fun solution(k: Int, ranges: Array<IntArray>): DoubleArray {
         val points = getPoints(k)
 
