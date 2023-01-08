@@ -1,23 +1,22 @@
 package programmers
 
 class Solution {
-    fun solution(storey: Int): Int {
-        var answer: Int = 0
+    fun solution(topping: IntArray): Int {
+        val leftSet = hashSetOf<Int>()
+        val rightMap = topping
+            .groupBy { it }
+            .mapValues { it.value.size }
+            .toMutableMap()
+        var rightCnt = rightMap.size
 
-        val storeyStr = storey.toString()
-        storeyStr.forEach {
-            if (it != '0') answer += getCount(it)
+        var answer = 0
+        topping.forEach { aTopping ->
+            leftSet.add(aTopping)
+            rightMap[aTopping] = rightMap[aTopping]!! - 1
+            if (rightMap[aTopping] == 0) rightCnt--
+            if (leftSet.size == rightCnt) answer++
         }
 
-        if (storey >= 10 && storeyStr.first().digitToInt() > 5) answer -= 1
-
         return answer
-    }
-
-    fun getCount(storey: Char): Int {
-        val layer =storey.digitToInt()
-
-        if (layer <= 5) return layer
-        return 11 - layer
     }
 }
