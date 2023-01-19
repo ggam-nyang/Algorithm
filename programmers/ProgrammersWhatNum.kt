@@ -1,6 +1,6 @@
 package programmers
 
-class Solution {
+class ProgrammersWhatNum {
     fun solution(topping: IntArray): Int {
         val leftSet = hashSetOf<Int>()
         val rightMap = topping
