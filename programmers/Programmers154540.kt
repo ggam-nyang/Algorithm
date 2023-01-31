@@ -1,6 +1,6 @@
 package programmers
 
-class Solution {
+class Programmers154540 {
     private lateinit var visited: Array<BooleanArray>
     private lateinit var newMap: Array<IntArray>
     private val dx = intArrayOf(0, 0, -1, 1)
