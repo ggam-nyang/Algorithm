@@ -1,5 +1,6 @@
 package programmers
 
+import java.lang.Integer.max
 import java.util.PriorityQueue
 
 class Solution {
@@ -8,7 +9,7 @@ class Solution {
             aBooking.map { Booking.fromString(it) }
         }
 
-        val maxRoom = 0
+        var maxRoom = 0
 
         val sortedBookings = bookings.sortedBy {
             it.first()
@@ -24,12 +25,11 @@ class Solution {
                 } else {
                     queue.add(booking.last())
                 }
-
+                maxRoom = max(maxRoom, queue.size)
             }
         }
 
-        var answer: Int = 0
-        return answer
+        return maxRoom
     }
 }
 
