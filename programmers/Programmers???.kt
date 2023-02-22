@@ -3,7 +3,7 @@ package programmers
 import java.lang.Integer.max
 import java.util.PriorityQueue
 
-class Solution {
+class `Programmers???` {
     fun solution(book_time: Array<Array<String>>): Int {
         val bookings = book_time.map { aBooking ->
             aBooking.map { Booking.fromString(it) }
