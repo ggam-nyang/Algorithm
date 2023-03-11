@@ -11,11 +11,11 @@ class Solution {
 
         var now = 1
 
-        while (now < section.last()) {
+        while (now <= section.last() && pq.isNotEmpty()) {
             answer++
-            now = pq.poll() + m - 1
+            now = pq.poll() + m
             while (pq.isNotEmpty()) {
-                if (pq.peek() <= now) pq.poll()
+                if (pq.peek() < now) pq.poll()
                 else break
             }
         }
