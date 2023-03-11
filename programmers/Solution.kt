@@ -1,15 +1,23 @@
 package programmers
 
-class Solution {
-    fun solution(word: String): Int {
-        val alphaMap = hashMapOf<Char, Int>()
-        val idxMap = hashMapOf<Int, Int>()
+import java.util.PriorityQueue
 
-        alphaMap.putAll(arrayOf('A' to 0, 'E' to 1, 'I' to 2, 'O' to 3, 'U' to 4))
-        idxMap.putAll(arrayOf(0 to 781, 1 to 156, 2 to 31, 3 to 6, 4 to 1))
-        var answer = 0
-        word.forEachIndexed { idx, c ->
-            answer += idxMap[idx]!! * alphaMap[c]!! + 1
+class Solution {
+    fun solution(n: Int, m: Int, section: IntArray): Int {
+        var answer: Int = 0
+
+        val pq = PriorityQueue<Int>()
+        pq.addAll(section.toList())
+
+        var now = 1
+
+        while (now < section.last()) {
+            answer++
+            now = pq.poll() + m - 1
+            while (pq.isNotEmpty()) {
+                if (pq.peek() <= now) pq.poll()
+                else break
+            }
         }
 
         return answer
