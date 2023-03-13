@@ -1,25 +1,20 @@
 package programmers
 
-import java.util.PriorityQueue
-
 class Solution {
-    fun solution(n: Int, m: Int, section: IntArray): Int {
-        var answer: Int = 0
+    fun solution(x: Int, y: Int, n: Int): Int {
+        val q = ArrayDeque<Pair<Int, Int>>()
+        q.add(Pair(x, 0))
 
-        val pq = PriorityQueue<Int>()
-        pq.addAll(section.toList())
+        while (q.isNotEmpty()) {
+            val (curr, cnt) = q.removeFirst()
 
-        var now = 1
+            if (curr == y) return cnt
 
-        while (now <= section.last() && pq.isNotEmpty()) {
-            answer++
-            now = pq.poll() + m
-            while (pq.isNotEmpty()) {
-                if (pq.peek() < now) pq.poll()
-                else break
-            }
+            if (curr + n <= y) q.add(Pair(curr + n, cnt + 1))
+            if (curr * 2 <= y) q.add(Pair(curr * 2, cnt + 1))
+            if (curr * 3 <= y) q.add(Pair(curr * 3, cnt + 1))
         }
 
-        return answer
+        return -1
     }
 }
