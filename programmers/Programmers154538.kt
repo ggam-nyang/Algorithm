@@ -1,6 +1,6 @@
 package programmers
 
-class Solution {
+class Programmers154538 {
     fun solution(x: Int, y: Int, n: Int): Int {
         val q = ArrayDeque<Pair<Int, Int>>()
         q.add(Pair(x, 0))
