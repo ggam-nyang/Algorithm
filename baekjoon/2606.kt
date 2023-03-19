@@ -23,7 +23,7 @@ fun main() = with(Scanner(System.`in`)) {
     println(virus - 1)
 }
 
-fun dfs(n: Int) {
+private fun dfs(n: Int) {
     virus++
 
     graph[n].forEach { node ->

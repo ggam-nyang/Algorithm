@@ -37,7 +37,7 @@ fun main() = with(Scanner(System.`in`)) {
     }
 }
 
-fun dfss(k: Int, v: Int, minUsado: Int) {
+private fun dfss(k: Int, v: Int, minUsado: Int) {
     visited[v] = true
 
     graph[v].forEach { vd ->

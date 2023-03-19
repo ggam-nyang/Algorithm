@@ -30,7 +30,7 @@ fun main() = with(Scanner(System.`in`)) {
     println(area)
 }
 
-fun dfs(startX: Int, startY: Int, N: Int, M: Int) {
+private fun dfs(startX: Int, startY: Int, N: Int, M: Int) {
     (0..3).forEach { i ->
         var newX = startX + dx[i]
         var newY = startY + dy[i]

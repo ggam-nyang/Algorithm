@@ -34,7 +34,7 @@ fun main() = with(Scanner(System.`in`)) {
     println(answer)
 }
 
-fun dfs(x: Int, y: Int, cnt: Int) {
+private fun dfs(x: Int, y: Int, cnt: Int) {
     if (cnt == K && x == 0 && y == C - 1) answer++
     else if (cnt == K) return
     else {

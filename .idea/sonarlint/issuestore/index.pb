@@ -7,8 +7,6 @@ P
  programmers/Programmers154539.kt,a/b/ab655b37b89f50a75e8ac0fe3573ffec167708eb
 P
  programmers/Programmers159993.kt,a/0/a046e2da7a6c75a3e7906024920b209317a4c41d
-@
-baekjoon/1189.kt,2/0/2064aa1cc77f7204bd016b1e208196a23149f35c
 A
 baekjoon/10655.kt,6/4/6476bfb9356faedd8fee87e4d67a5e8ab3370f07
 A
