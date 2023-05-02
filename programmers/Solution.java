@@ -1,37 +1,37 @@
 package programmers;
 
-import java.lang.reflect.Array;
-
 class Solution {
     public int[] solution(int[] sequence, int k) {
-        int left = 0;
-        int right = 1;
-        int[] answer = new int[2];
 
-        int sum = sequence[left];
-        while(left <= right) {
-            if (sum < k) {
-                if (right >= sequence.length) {
-                    break;
-                }
-                sum += sequence[right];
-                right++;
-            }
-            else if (sum > k) {
+        int left = 0;
+        int right = 0;
+        int sum = 0;
+        int size = sequence.length;
+        int ans1 = 0;
+        int ans2 = 0;
+
+        for(right=0; right<sequence.length; right++) {
+            sum += sequence[right];
+
+            while(sum > k) {
                 sum -= sequence[left];
                 left++;
+            }
 
-                if (left >= sequence.length) {
-                    break;
+            if(sum == k) {
+                if(size > right-left) {
+                    size = right-left;
+                    ans1 = left;
+                    ans2 = right;
+                }
+                else if(size == right-left) {
+                    ans1 = Math.min(ans1, left);
+                    ans2 = Math.min(ans2, right);
                 }
             }
-            else {
-                answer[0] = left;
-                answer[1] = right;
-                return answer;
-            }
+
         }
 
-        return answer;
+        return new int[] {ans1, ans2};
     }
 }
