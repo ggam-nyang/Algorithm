@@ -1,6 +1,6 @@
 package programmers;
 
-class Solution {
+class Programmers123124124 {
     public int[] solution(int[] sequence, int k) {
 
         int left = 0;
