@@ -1,7 +1,8 @@
 package programmers;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Optional;
+import java.util.Queue;
 
 // dfs time over
 // need bfs
@@ -15,42 +16,49 @@ class Programmers1844 {
     int[][] graph;
 
     public int solution(int[][] maps) {
+        int answer = -1;
+
         X = maps.length;
         Y = maps[0].length;
         visited = new boolean[X][Y];
         graph = maps;
 
         visited[0][0] = true;
-        dfs(0, 0, 1);
 
-        if (ans.isEmpty()) return -1;
-        return ans.stream().min(Integer::compareTo).get();
-    }
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.add(new Node(0, 0, 1));
 
-    private void dfs(int x, int y, int level) {
-        System.out.println(x + "  " + y + "  " + level);
+        while (!queue.isEmpty()) {
+            Node node = queue.remove();
 
-        if (x == X - 1 && y == Y - 1) {
-            ans.add(level);
-            return;
-        }
+            for (int i = 0; i < 4; i++) {
+                int newX = node.x + dx[i];
+                int newY = node.y + dy[i];
 
-        Optional<Integer> minValue = ans.stream().min(Integer::compareTo);
-        if (minValue.isPresent()) {
-            if (minValue.get() <= level) return;
-        }
-
-        for (int i = 0; i < 4; i++) {
-            int newX = x + dx[i];
-            int newY = y + dy[i];
-
-            if (0 <= newX && newX < X && 0 <= newY && newY < Y && !visited[newX][newY]) {
-                if (graph[newX][newY] == 1) {
-                    visited[newX][newY] = true;
-                    dfs(newX, newY, level + 1);
-                    visited[newX][newY] = false;
+                if (0 <= newX && newX < X && 0 <= newY && newY < Y && !visited[newX][newY]) {
+                    if (maps[newX][newY] == 1) {
+                        if (newX == X - 1 && newY == Y - 1) {
+                            return node.level + 1;
+                        }
+                        visited[newX][newY] = true;
+                        queue.add(new Node(newX, newY, node.level + 1));
+                    }
                 }
             }
+        }
+
+        return answer;
+    }
+
+    static class Node {
+        int x;
+        int y;
+        int level;
+
+        public Node(int x, int y, int level) {
+            this.x = x;
+            this.y = y;
+            this.level = level;
         }
     }
 }
