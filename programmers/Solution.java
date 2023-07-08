@@ -26,7 +26,6 @@ class Solution {
                     shootLight(x, y, d);
                 }
             }
-
         }
 
         int[] answer = {};

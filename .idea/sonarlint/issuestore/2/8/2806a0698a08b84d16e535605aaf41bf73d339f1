@@ -1,0 +1,9 @@
+
+t
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "answer".(µ™ä‚
+a	java:S116"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹¸Î»
+f	java:S116"LRename this field "Y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ôÙ§øÿÿÿÿ
+V
+java:S1172#"4Remove these unused method parameters "x", "y", "d".(Ó±Œ”þÿÿÿÿ8¸ªÀÕþ0
+O
+java:S1135$"2Complete the task associated to this TODO comment.(˜âÅ»8ÉñÀÕþ0

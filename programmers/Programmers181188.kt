@@ -1,21 +1,18 @@
 package programmers
 
 class Programmers181188 {
-    val MAX = 100_000_000
-
     fun solution(targets: Array<IntArray>): Int {
-        val sortedTargets = targets.sortedBy { it.last() }
+        var answer: Int = 0
+        val sortedTargets = targets.sortedWith(compareBy<IntArray> { it[1] }.thenBy{ it[0] })
 
-        var end = sortedTargets.first().last()
-        var count = 1
-
-        for (target in sortedTargets) {
-            if (target.first() >= end) {
-                count++
-                end = target.last()
+        var e = 0
+        sortedTargets.forEach { target ->
+            if (target[0] >= e) {
+                answer++
+                e = target[1]
             }
         }
 
-        return count
+        return answer
     }
 }
