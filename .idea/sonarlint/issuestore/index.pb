@@ -43,3 +43,9 @@ Q
 !programmers/Programmers87391.java,7/d/7d09255ddccfa02f2e11240bde9f481a20c198b1
 I
 programmers/Solution.java,2/8/2806a0698a08b84d16e535605aaf41bf73d339f1
+P
+ programmers/Programmers181188.kt,5/a/5a284619534f6bee5412b3024ccc3eb7dde07b16
+E
+oohtechcamp/Sol1.java,c/b/cbd763f4178ff9a711931cbc96813e1e73896b8d
+B
+OooAhOnboarding.kt,f/0/f02ed095c769db05b6920850eb51b0789b29b70d
