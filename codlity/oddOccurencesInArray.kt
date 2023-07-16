@@ -27,7 +27,7 @@ fun failedSolution2(A: IntArray): Int {
     return set.first()
 }
 
-fun solution(A: IntArray): Int {
+private fun solution(A: IntArray): Int {
     var answer = 0
 
     A.forEach { answer = it xor answer }

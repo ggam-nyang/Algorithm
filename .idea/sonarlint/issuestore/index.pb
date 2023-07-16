@@ -53,12 +53,8 @@ B
 myTest/1.kt,d/2/d2d5c40381a141b9b14f6e6551e7e926a99fe41e
 ;
 myTest/3.kt,e/0/e00418bf6895d647016be4915b20e7deaffba39a
-I
-codlity/cyclicRotation.kt,2/1/21f97738b6b134fb5d01bff949a9b27a54c67e4d
 D
 codlity/binaryGap.kt,a/5/a5af0e89378633d49796ab3c9c0d853ad309634c
-@
-codlity/demo1.kt,6/b/6bae15be288f77e9e3c053ce90355fc50e4a9559
 ;
 myTest/2.kt,7/b/7b425c8e0c4d9edea8e832d71c80023b0379df90
 ;
