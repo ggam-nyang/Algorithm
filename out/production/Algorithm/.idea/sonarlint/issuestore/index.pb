@@ -1,8 +1,6 @@
 
 A
 baekjoon/17780.kt,6/b/6bf8178496a7bd840442beee48b853e1b0948eb2
-@
-baekjoon/1049.kt,5/a/5abc393035b8001a0fb75c30ad57b5c031ac0e9a
 P
  programmers/Programmers154539.kt,a/b/ab655b37b89f50a75e8ac0fe3573ffec167708eb
 P
@@ -53,12 +51,8 @@ B
 myTest/1.kt,d/2/d2d5c40381a141b9b14f6e6551e7e926a99fe41e
 ;
 myTest/3.kt,e/0/e00418bf6895d647016be4915b20e7deaffba39a
-I
-codlity/cyclicRotation.kt,2/1/21f97738b6b134fb5d01bff949a9b27a54c67e4d
 D
 codlity/binaryGap.kt,a/5/a5af0e89378633d49796ab3c9c0d853ad309634c
-@
-codlity/demo1.kt,6/b/6bae15be288f77e9e3c053ce90355fc50e4a9559
 ;
 myTest/2.kt,7/b/7b425c8e0c4d9edea8e832d71c80023b0379df90
 ;
@@ -69,3 +63,34 @@ D
 myTest/7.kt,f/d/fd53f69ffef5c33998479b973c810200c8f36b55
 ;
 myTest/6.kt,9/1/917eac77ec07f3d756faeb5078acf964894cf035
+J
+codlity/TapeEquilibrium.kt,0/1/01f208c9117bfda954758605c7ec428165b0d74c
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+J
+codlity/PermMissingElem.kt,a/f/af2e3474ab5d6b6c988210122e309748d1e622bd
+C
+codlity/CountDiv.kt,8/3/8342175ae949bc1d28382f9c12328bc528506053
+@
+codlity/demo1.kt,6/b/6bae15be288f77e9e3c053ce90355fc50e4a9559
+I
+codlity/cyclicRotation.kt,2/1/21f97738b6b134fb5d01bff949a9b27a54c67e4d
+C
+codlity/frogJump.kt,d/c/dc31bbeeca6204286b54bc98d179f575953bf618
+G
+codlity/FrogRiverOne.kt,e/c/eceb91fc408839d44349f1b74fc7028563ce003c
+L
+codlity/GenomicRangeQuery.kt,d/8/d8ca6277dd39c03eb83d14ddfba38089e90593f9
+E
+codlity/ArrListLen.kt,6/4/64a00a5fa78831c8507ee196149a8939dad66f35
+F
+codlity/MaxCounters.kt,3/2/324016d2759c6e2f38dbe53a83b9611bceb35897
+O
+codlity/oddOccurencesInArray.kt,1/0/10bfeb77eccd117181e740dfa42228298878170b
+F
+codlity/PassingCars.kt,d/1/d152fe6f00c8a57b678e042c2844aab983e6be0e
+D
+codlity/PermCheck.kt,a/1/a1637aa4b35e17362dd60184d4536d2fce2d2272
+M
+codlity/CountBoundedSlices.kt,2/e/2e31c302be646d1abbb4531d0bad91f99de11118
