@@ -19,14 +19,10 @@ P
  programmers/Programmers154538.kt,2/d/2d8c6926bda6eca20ff22e177564ff97f8f2ecb7
 A
 baekjoon/15591.kt,0/f/0f73bd49ca7b50fd929ea14a89056917440731d0
-@
-baekjoon/1189.kt,2/0/2064aa1cc77f7204bd016b1e208196a23149f35c
 P
  programmers/Programmers181187.kt,c/d/cd77a1328d69620fa282aac3a30ff3690b8bc043
 A
 baekjoon/17182.kt,d/f/df5dbfbf88bfe02232fae87a9ee9c96854827d21
-@
-baekjoon/2606.kt,7/3/73c1775d7c0a116c5eac9486ae78639e7e3a439d
 P
  programmers/Programmers1844.java,4/d/4de07637b25e53c389c73d0c6db70d85364b84c5
 R
