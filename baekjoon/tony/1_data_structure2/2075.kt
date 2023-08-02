@@ -1,4 +1,4 @@
-package baekjoon.tony.data_structure2
+package baekjoon.tony.`1_data_structure2`
 
 import java.util.PriorityQueue
 

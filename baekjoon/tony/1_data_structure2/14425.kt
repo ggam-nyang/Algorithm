@@ -1,4 +1,4 @@
-package baekjoon.tony.data_structure2
+package baekjoon.tony.`1_data_structure2`
 
 fun main() {
     val (N, M) = readln().split(" ").map(String::toInt)

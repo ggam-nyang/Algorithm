@@ -1,4 +1,4 @@
-package baekjoon.tony.data_structure1
+package baekjoon.tony.`0_data_structure1`
 
 import java.util.*
 
