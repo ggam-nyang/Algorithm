@@ -1,4 +1,4 @@
-package leetCode.topInterview150
+package leetCode.topInterview150.array
 
 class Solution {
     fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
