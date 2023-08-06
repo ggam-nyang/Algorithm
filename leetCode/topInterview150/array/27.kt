@@ -21,7 +21,12 @@ class Solution27 {
 
     fun removeElementBeautiful(nums: IntArray, num: Int): Int {
         var counter = 0
-        nums.forEach { if (it != num) nums[counter++] = it }
+        nums.forEach {
+            if (it != num) {
+                nums[counter] = it
+                counter++
+            }
+        }
 
         return counter
     }
