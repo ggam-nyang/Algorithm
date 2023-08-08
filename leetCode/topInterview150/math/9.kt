@@ -1,4 +1,4 @@
-package leetCode.topInterview150.array
+package leetCode.topInterview150.math
 
 class Solution9 {
     fun isPalindrome(x: Int): Boolean {

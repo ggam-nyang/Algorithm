@@ -1,4 +1,4 @@
-package leetCode.topInterview150.array
+package leetCode.topInterview150.stack
 
 class Solution20 {
     fun isValid(s: String): Boolean {
