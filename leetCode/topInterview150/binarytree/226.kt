@@ -22,4 +22,11 @@ class Solution226 {
 
         return root
     }
+
+    fun shortInvertTree(root: TreeNode?) =
+        root?.apply {
+            left = invertTree(right).also {
+                right = invertTree(left)
+            }
+        }
 }
