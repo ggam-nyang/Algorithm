@@ -162,3 +162,5 @@ W
 'leetCode/topInterview150/hashmap/290.kt,c/7/c77cb6519546af6d1a5212521fe28498a5505594
 W
 'leetCode/topInterview150/hashmap/242.kt,3/0/3016075b51c6a208443007f8d417c1eec037d51f
+Z
+*leetCode/topInterview150/binarytree/101.kt,0/4/048cb503c12cbb2dd812e0e3582c50e21efb2322
