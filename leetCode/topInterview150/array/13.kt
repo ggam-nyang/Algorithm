@@ -7,7 +7,7 @@ class Solution13 {
         }.sum()
     }
 
-    fun Char.roman(): Int {
+    private fun Char.roman(): Int {
         return when(this) {
             'I' -> 1
             'V' -> 5
