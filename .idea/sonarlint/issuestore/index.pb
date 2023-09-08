@@ -186,3 +186,7 @@ U
 %leetCode/topInterview150/array/121.kt,b/2/b2e91a52e749b284db2dc13a62519f2f2dd845f0
 U
 %leetCode/topInterview150/array/122.kt,d/e/de5ebae5e2ddd65ad3c0c87e92f1d2e0081b3a12
+T
+$leetCode/topInterview150/array/13.kt,9/9/999c3c2b479cc6619477bbfe8bd186a10ebff0ef
+T
+$leetCode/topInterview150/array/12.kt,7/6/76e2c6e7306fdf59338e8977c8731ae4fbfe2cb1
