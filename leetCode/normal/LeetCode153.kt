@@ -1,4 +1,4 @@
-package leetCode
+package leetCode.normal
 
 import kotlin.math.min
 

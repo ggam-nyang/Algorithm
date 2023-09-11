@@ -1,4 +1,4 @@
-package leetCode
+package leetCode.normal
 
 import java.lang.Integer.min
 

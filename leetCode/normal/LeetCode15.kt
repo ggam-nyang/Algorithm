@@ -1,4 +1,4 @@
-package leetCode
+package leetCode.normal
 
 class LeetCode15 {
     fun threeSum(nums: IntArray): List<List<Int>> {

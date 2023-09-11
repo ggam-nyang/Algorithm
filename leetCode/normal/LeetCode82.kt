@@ -1,4 +1,4 @@
-//package LeetCode
+package leetCode.normal//package LeetCode
 //
 ///**
 // * Example:
