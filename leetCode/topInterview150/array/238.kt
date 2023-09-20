@@ -14,7 +14,6 @@ class Solution238 {
             answer[it] *= n
             n *= nums[it]
         }
-
         return answer
     }
 }
