@@ -8,6 +8,7 @@ class Solution54 {
         Position(-1, 0)
     )
 
+    // 한 row, col을 모두 담으면 속도가 개선될 듯
     fun spiralOrder(matrix: Array<IntArray>): List<Int> {
         val row = matrix.size
         val col = matrix.first().size
