@@ -220,3 +220,11 @@ U
 %leetCode/topInterview150/array/134.kt,9/6/96217bb20380e703a6bcce580433f99822257678
 S
 #leetCode/topInterview150/math/66.kt,6/4/64164ea8e3c8d557b415544f54b78631b497403a
+W
+'leetCode/topInterview150/hashmap/202.kt,9/2/929410d862d87dfe0380b1e222a1a734b1239999
+W
+'leetCode/topInterview150/hashmap/205.kt,2/1/216ae32f9d755859e9d7ba412c1e5ac5c0ebed6d
+W
+'leetCode/topInterview150/hashmap/219.kt,f/9/f92c37d0ae137815eae29968a310c2d1b37a65da
+W
+'leetCode/topInterview150/hashmap/242.kt,3/0/3016075b51c6a208443007f8d417c1eec037d51f
