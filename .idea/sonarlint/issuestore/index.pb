@@ -128,8 +128,6 @@ M
 baekjoon/tony/2_tree/14675.kt,5/f/5f16784d8f0ef48386b308e01808f5b5435d9feb
 ]
 -baekjoon/tony/1_data_structure2/11286_fast.kt,4/0/40144e74f7e14eda1039021246b9ef44d80b994d
-T
-$leetCode/topInterview150/stack/20.kt,d/2/d2de60f0295f48ccefe1a3b0a3d893388b002fd5
 R
 "leetCode/topInterview150/math/9.kt,f/5/f50febb97e7f4c1553f3fe1a46dc629067008247
 \
