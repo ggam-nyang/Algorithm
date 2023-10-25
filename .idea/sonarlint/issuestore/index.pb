@@ -143,8 +143,6 @@ Y
 T
 $leetCode/topInterview150/array/80.kt,1/8/18dcb979df7634aa370889288bebd5a2cbbee432
 Z
-*leetCode/topInterview150/linkedlist/141.kt,9/3/9302ff64acb055e0ace9823e6fffc05f1e9186d4
-Z
 *leetCode/topInterview150/binarytree/104.kt,6/0/60a47745f464ba70d551ba0bfe247ddacba890bb
 Z
 *leetCode/topInterview150/binarytree/100.kt,c/8/c81bfa251671cade20aef6550185444d334afd97
@@ -162,10 +160,6 @@ U
 %leetCode/topInterview150/array/189.kt,a/6/a628b18d43625f2f53adbc89ebfb2efdbfe0503f
 Z
 *leetCode/topInterview150/twopointer/392.kt,9/0/900f0035a715c74906efe9496d084a6e067ff7bb
-X
-(leetCode/topInterview150/linkedlist/2.kt,1/0/103b7370829531248a72ff795c3d4144de3d6074
-Y
-)leetCode/topInterview150/linkedlist/21.kt,7/e/7e840dfc724dc9b20386df06a5aa50281933fbf0
 Z
 *leetCode/topInterview150/twopointer/167.kt,3/f/3f5a704c7d533e5646246ff9b90505cbe8d69643
 U
