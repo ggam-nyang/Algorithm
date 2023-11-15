@@ -6,6 +6,7 @@ class Solution33 {
         var left = 0
         var right = nums.lastIndex
 
+        // change to binarySearch
         var k = 0
         for (i in 0 until  nums.lastIndex) {
             if (nums[i] > nums[i + 1]) k = i
