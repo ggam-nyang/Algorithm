@@ -1,44 +1,16 @@
 
 A
 baekjoon/17780.kt,6/b/6bf8178496a7bd840442beee48b853e1b0948eb2
-P
- programmers/Programmers154539.kt,a/b/ab655b37b89f50a75e8ac0fe3573ffec167708eb
-P
- programmers/Programmers159993.kt,a/0/a046e2da7a6c75a3e7906024920b209317a4c41d
 A
 baekjoon/10655.kt,6/4/6476bfb9356faedd8fee87e4d67a5e8ab3370f07
 A
 baekjoon/13335.kt,c/9/c90cf60c7af32ed0a5e100b0649c8c46d09535bb
-M
-programmers/Programmers???.kt,e/b/ebead2f7b3ad69e935f71ae05b88b5da4300c5b2
-Q
-!programmers/Programmers9999999.kt,c/0/c09ea3ef658cef3f00d9b11637e1927e0b691695
-P
- programmers/Programmers161989.kt,5/0/50f80701217cd1cc575730ef62ffdeed28ca7a9f
-P
- programmers/Programmers154538.kt,2/d/2d8c6926bda6eca20ff22e177564ff97f8f2ecb7
 A
 baekjoon/15591.kt,0/f/0f73bd49ca7b50fd929ea14a89056917440731d0
-P
- programmers/Programmers181187.kt,c/d/cd77a1328d69620fa282aac3a30ff3690b8bc043
 A
 baekjoon/17182.kt,d/f/df5dbfbf88bfe02232fae87a9ee9c96854827d21
-P
- programmers/Programmers1844.java,4/d/4de07637b25e53c389c73d0c6db70d85364b84c5
-R
-"programmers/Programmers152996.java,f/f/ff4aaccda0c8b631b3c25d44333a4341fc4fac0f
-U
-%programmers/Programmers123124124.java,f/f/fffb77f51e682571eecf1d8865ea48872ca8eb48
-P
- programmers/Programmer87946.java,d/7/d72e3af841c73f77ebf716624d247f7c67879f88
 B
 baekjoon/smtc/2.kt,0/c/0c45302141a2316626c601bac44c5f4681d587ee
-Q
-!programmers/Programmers87391.java,7/d/7d09255ddccfa02f2e11240bde9f481a20c198b1
-I
-programmers/Solution.java,2/8/2806a0698a08b84d16e535605aaf41bf73d339f1
-P
- programmers/Programmers181188.kt,5/a/5a284619534f6bee5412b3024ccc3eb7dde07b16
 E
 oohtechcamp/Sol1.java,c/b/cbd763f4178ff9a711931cbc96813e1e73896b8d
 B
@@ -100,8 +72,6 @@ A
 codlity/test/1.kt,8/d/8d72f58c2cae1a6e31f60a3303289914252fc3b1
 F
 codlity/FirstUnique.kt,8/8/883173e7f503643be821b174692170feb613d977
-P
- programmers/Programmers120829.kt,6/4/64b3d4ce1eca60dfb183af36e3ce9aec18c57629
 K
 codlity/TennisTournament.kt,9/8/9891891084441bf4b459a9ea13fac1449a15c332
 F
