@@ -222,3 +222,15 @@ T
 $leetCode/topInterview150/array/42.kt,9/7/9716b7dc050fbc5b7e79825a0e21de08204877ac
 \
 ,leetCode/topInterview150/binarysearch/162.kt,f/f/ff3d731f332292781877db79e251abed4cf051a6
+[
++leetCode/topInterview150/binarysearch/34.kt,6/3/63785a119bc19e6bd2223f518d3708abad820b4b
+P
+ programmers/kotlin/SomeProb.java,9/1/91623a25da2cbdf262b3c06366c7de360c14a83c
+R
+"programmers/kotlin/WhatNumber.java,a/f/af05009367ed5bfbe3ae2df5627a4e795b7b5138
+W
+'programmers/kotlin/Programmers_92335.kt,9/b/9bceeedc0ddcb85879661f8a4962236e90029adf
+W
+'programmers/kotlin/Programmers_70129.kt,7/1/71386a50e7d87ae49fc3502c9cd452b67bc01828
+W
+'programmers/kotlin/Programmers154539.kt,5/4/540bae30fafdcc45cf3266718c6a9c906fb5a199
